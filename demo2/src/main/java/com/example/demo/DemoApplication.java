@@ -28,7 +28,7 @@ public class DemoApplication {
     @PostMapping(path = "/hello", consumes = "application/json")
     public void createPerson(@RequestBody String name) {
     	if(!name.equals("Fan")) {
-    		System.out.println("Error: Name is not Fan");
+    		System.out.println("Error: Name is not Fan!");
     		throw new WrongNameException();
     	} else {
     		System.out.println(name);
