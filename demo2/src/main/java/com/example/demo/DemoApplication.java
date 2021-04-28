@@ -38,7 +38,7 @@ public class DemoApplication {
         return nameList;
     }
     
-    // return the name of an id
+    // return the name of an id per localhost:8080/person/id
     @GetMapping("/person/id")
     public String personName(@RequestParam(value = "id") int id) {
     	String name = "";
